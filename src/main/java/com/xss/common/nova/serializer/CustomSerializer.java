@@ -4,8 +4,8 @@ import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 import com.xss.common.nova.annotation.JsonMosaic;
-import com.xss.common.nova.util.BaseJsonUtils;
-import com.xss.common.nova.util.BaseStringUtils;
+import com.xss.common.nova.util.BaseJsonUtil;
+import com.xss.common.nova.util.BaseStringUtil;
 
 import java.io.IOException;
 
@@ -23,8 +23,8 @@ public class CustomSerializer extends StdSerializer {
             return;
         }
 
-        String text = BaseJsonUtils.writeValue(obj);
-        text = BaseStringUtils.mosaic(text, jsonMosaic, '*');
+        String text = BaseJsonUtil.writeValue(obj);
+        text = BaseStringUtil.mosaic(text, jsonMosaic, '*');
         jsonGenerator.writeString(text);
     }
 }

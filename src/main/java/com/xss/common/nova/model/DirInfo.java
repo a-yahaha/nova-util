@@ -1,6 +1,6 @@
 package com.xss.common.nova.model;
 
-import com.xss.common.nova.util.BaseJsonUtils;
+import com.xss.common.nova.util.BaseJsonUtil;
 import lombok.Data;
 import org.apache.commons.lang3.StringUtils;
 
@@ -75,7 +75,7 @@ public class DirInfo {
     }
 
     public String toString() {
-        return BaseJsonUtils.writeValue(this);
+        return BaseJsonUtil.writeValue(this);
     }
 
     private DirInfo getDirInfo(String path) {

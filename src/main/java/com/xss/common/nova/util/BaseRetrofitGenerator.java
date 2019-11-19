@@ -90,7 +90,7 @@ public class BaseRetrofitGenerator {
                     e.printStackTrace();
                 }
             }
-            BaseJsonUtils.generateCode(CaseFormat.LOWER_CAMEL.to(CaseFormat.UPPER_CAMEL, methodName + "ReqDto"), paramsMap.get(BODY).toArray()[0].toString(), classPackage);
+            BaseJsonUtil.generateCode(CaseFormat.LOWER_CAMEL.to(CaseFormat.UPPER_CAMEL, methodName + "ReqDto"), paramsMap.get(BODY).toArray()[0].toString(), classPackage);
         }
 
         outputApiConfig(paramsMap.get(BASE_URL).toArray()[0].toString(), configPackage, apiPackage);
@@ -107,7 +107,7 @@ public class BaseRetrofitGenerator {
                 finalClientContent = generateApi(methodName, apiPackage, classPackage, paramsMap).toString();
             } else {
                 List<String> implementedMethodsNameList = getImplementedMethodsName(apiPackage);
-                String originalContent = BaseFileUtils.fileToString(new File(apiPath + "/" + "Api.java"));
+                String originalContent = BaseFileUtil.fileToString(new File(apiPath + "/" + "Api.java"));
                 if (!CollectionUtils.isNotEmpty(implementedMethodsNameList) || !implementedMethodsNameList.contains(methodName)) {
                     String newContent = generateApi(methodName, apiPackage, classPackage, paramsMap).toString();
                     finalClientContent = mergeApi(originalContent, newContent);
@@ -119,13 +119,13 @@ public class BaseRetrofitGenerator {
             finalClientContent = generateApi(methodName, apiPackage, classPackage, paramsMap).toString();
         }
 
-        BaseFileUtils.writeToFileSave(apiPath, "Api.java", finalClientContent, false);
+        BaseFileUtil.writeToFileSave(apiPath, "Api.java", finalClientContent, false);
     }
 
     private static void outputApiConfig(String baseUrl, String configPackage, String apiPackage) {
         String configContent = generateApiConfig(baseUrl, configPackage, apiPackage);
         if (StringUtils.isNotBlank(configContent)) {
-            BaseFileUtils.writeToFileSave(configPath, "ApiConfig.java", configContent, false);
+            BaseFileUtil.writeToFileSave(configPath, "ApiConfig.java", configContent, false);
         }
     }
 
@@ -274,7 +274,7 @@ public class BaseRetrofitGenerator {
                             "                .readTimeout(30000)\n" +
                             "                .retryWhenTimeout(3)\n" +
                             "                .timeBetweenRetry(100)\n" +
-                            "                .build()", BaseRetrofitUtils2.class)
+                            "                .build()", BaseRetrofitUtil2.class)
                     .returns(Retrofit.class);
 
             MethodSpec.Builder apiMethod = MethodSpec.methodBuilder("api")

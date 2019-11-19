@@ -1,7 +1,7 @@
 package com.xss.common.nova.model;
 
 import com.google.common.base.Preconditions;
-import com.xss.common.nova.util.BaseCollectionUtils;
+import com.xss.common.nova.util.BaseCollectionUtil;
 import lombok.Getter;
 
 import java.util.List;
@@ -13,7 +13,7 @@ public class CombinedCriteria extends Criteria {
     protected CombinedCriteria(List<Criteria> criteria) {
         super(null);
         this.criteria = criteria;
-        Preconditions.checkArgument(BaseCollectionUtils.isNotEmpty(criteria), "CombinedCriteria构造函数不允许传入null或空Criteria");
+        Preconditions.checkArgument(BaseCollectionUtil.isNotEmpty(criteria), "CombinedCriteria构造函数不允许传入null或空Criteria");
     }
 
     @Override

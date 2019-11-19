@@ -3,7 +3,7 @@ package com.xss.common.nova.deserializer;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
-import com.xss.common.nova.util.BaseDateUtils;
+import com.xss.common.nova.util.BaseDateUtil;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
@@ -16,6 +16,6 @@ public class FromTimeFormat extends JsonDeserializer<Date> {
         if (StringUtils.isBlank(date)) {
             return null;
         }
-        return BaseDateUtils.parseDate(date, "yyyy-MM-dd HH:mm:ss");
+        return BaseDateUtil.parseDate(date, "yyyy-MM-dd HH:mm:ss");
     }
 }
