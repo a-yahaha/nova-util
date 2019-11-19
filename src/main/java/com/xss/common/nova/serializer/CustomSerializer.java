@@ -3,9 +3,9 @@ package com.xss.common.nova.serializer;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
+import com.xss.common.nova.annotation.JsonMosaic;
 import com.xss.common.nova.util.BaseJsonUtils;
 import com.xss.common.nova.util.BaseStringUtils;
-import com.xss.common.nova.annotation.JsonMosaic;
 
 import java.io.IOException;
 

@@ -6,7 +6,6 @@ import org.apache.commons.lang3.StringUtils;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class BaseKeyValue {
     private static String DEFAULT_KEY = "#default#";

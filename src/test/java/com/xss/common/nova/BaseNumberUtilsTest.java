@@ -2,7 +2,8 @@ package com.xss.common.nova;
 
 import com.xss.common.nova.util.BaseNumberUtils;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
 
 public class BaseNumberUtilsTest {
     @Test
