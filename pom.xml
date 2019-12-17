@@ -31,7 +31,7 @@
         <powermock.version>1.7.1</powermock.version>
         <mysql-connector.version>5.1.40</mysql-connector.version>
         <hamcrest-junit.version>2.0.0.0</hamcrest-junit.version>
-        <retrofit2.version>2.1.0</retrofit2.version>
+        <retrofit2.version>2.7.0</retrofit2.version>
         <httpclient.version>4.5.1</httpclient.version>
         <mchange-c3p0.version>0.9.5.2</mchange-c3p0.version>
         <druid.version>1.0.14</druid.version>
