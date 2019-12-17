@@ -24,6 +24,21 @@
         <jwt.version>2.2.0</jwt.version>
         <okhttp.version>3.3.0</okhttp.version>
         <mockito.version>2.8.9</mockito.version>
+        <spring.version>4.3.18.RELEASE</spring.version>
+        <aspectjrt.version>1.8.8</aspectjrt.version>
+        <astyanax-core.version>3.8.0</astyanax-core.version>
+        <hibernate-validator.version>5.2.2.Final</hibernate-validator.version>
+        <powermock.version>1.7.1</powermock.version>
+        <mysql-connector.version>5.1.40</mysql-connector.version>
+        <hamcrest-junit.version>2.0.0.0</hamcrest-junit.version>
+        <retrofit2.version>2.1.0</retrofit2.version>
+        <httpclient.version>4.5.1</httpclient.version>
+        <mchange-c3p0.version>0.9.5.2</mchange-c3p0.version>
+        <druid.version>1.0.14</druid.version>
+        <el-impl.version>2.2</el-impl.version>
+        <javapoet.version>1.9.0</javapoet.version>
+        <reflections.version>0.9.11</reflections.version>
+        <servlet-api.version>2.5</servlet-api.version>
     </properties>
 
     <dependencies>
@@ -114,20 +129,20 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
-            <version>4.3.5.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjrt</artifactId>
-            <version>1.8.8</version>
+            <version>${aspectjrt.version}</version>
             <optional>true</optional>
         </dependency>
 
         <dependency>
             <groupId>com.netflix.astyanax</groupId>
             <artifactId>astyanax-core</artifactId>
-            <version>3.8.0</version>
+            <version>${astyanax-core.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.cassandra</groupId>
@@ -139,31 +154,31 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
-            <version>5.2.2.Final</version>
+            <version>${hibernate-validator.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.glassfish.web</groupId>
             <artifactId>el-impl</artifactId>
-            <version>2.2</version>
+            <version>${el-impl.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.squareup</groupId>
             <artifactId>javapoet</artifactId>
-            <version>1.9.0</version>
+            <version>${javapoet.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
-            <version>0.9.11</version>
+            <version>${reflections.version}</version>
         </dependency>
 
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
+            <version>${servlet-api.version}</version>
             <scope>provided</scope>
             <optional>true</optional>
         </dependency>
@@ -171,7 +186,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>4.3.4.RELEASE</version>
+            <version>${spring.version}</version>
             <scope>provided</scope>
             <optional>true</optional>
         </dependency>
@@ -179,7 +194,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
-            <version>1.0.14</version>
+            <version>${druid.version}</version>
             <optional>true</optional>
             <scope>provided</scope>
         </dependency>
@@ -187,7 +202,7 @@
         <dependency>
             <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>
-            <version>0.9.5.2</version>
+            <version>${mchange-c3p0.version}</version>
             <optional>true</optional>
             <scope>provided</scope>
         </dependency>
@@ -206,22 +221,22 @@
         <dependency>
             <groupId>com.squareup.retrofit2</groupId>
             <artifactId>retrofit</artifactId>
-            <version>2.1.0</version>
+            <version>${retrofit2.version}</version>
         </dependency>
         <dependency>
             <groupId>com.squareup.retrofit2</groupId>
             <artifactId>converter-jackson</artifactId>
-            <version>2.1.0</version>
+            <version>${retrofit2.version}</version>
         </dependency>
         <dependency>
             <groupId>com.squareup.retrofit2</groupId>
             <artifactId>converter-simplexml</artifactId>
-            <version>2.1.0</version>
+            <version>${retrofit2.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.1</version>
+            <version>${httpclient.version}</version>
         </dependency>
 
         <!--  test  -->
@@ -233,32 +248,32 @@
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-junit</artifactId>
-            <version>2.0.0.0</version>
+            <version>${hamcrest-junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>4.3.4.RELEASE</version>
+            <version>${spring.version}</version>
             <scope>test</scope>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.40</version>
+            <version>${mysql-connector.version}</version>
             <scope>test</scope>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.powermock</groupId>
             <artifactId>powermock-module-junit4</artifactId>
-            <version>1.7.1</version>
+            <version>${powermock.version}</version>
         </dependency>
         <dependency>
             <groupId>org.powermock</groupId>
             <artifactId>powermock-api-mockito2</artifactId>
-            <version>1.7.1</version>
+            <version>${powermock.version}</version>
         </dependency>
     </dependencies>
 
