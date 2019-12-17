@@ -33,7 +33,7 @@
         <hamcrest-junit.version>2.0.0.0</hamcrest-junit.version>
         <retrofit2.version>2.1.0</retrofit2.version>
         <httpclient.version>4.5.1</httpclient.version>
-        <mchange-c3p0.version>0.9.5.2</mchange-c3p0.version>
+        <mchange-c3p0.version>0.9.5.4</mchange-c3p0.version>
         <druid.version>1.0.14</druid.version>
         <el-impl.version>2.2</el-impl.version>
         <javapoet.version>1.9.0</javapoet.version>
