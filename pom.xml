@@ -27,7 +27,7 @@
         <spring.version>4.3.18.RELEASE</spring.version>
         <aspectjrt.version>1.8.8</aspectjrt.version>
         <astyanax-core.version>3.8.0</astyanax-core.version>
-        <hibernate-validator.version>5.2.2.Final</hibernate-validator.version>
+        <hibernate-validator.version>5.3.6.Final</hibernate-validator.version>
         <powermock.version>1.7.1</powermock.version>
         <mysql-connector.version>5.1.40</mysql-connector.version>
         <hamcrest-junit.version>2.0.0.0</hamcrest-junit.version>
