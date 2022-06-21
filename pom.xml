@@ -29,7 +29,7 @@
         <astyanax-core.version>3.8.0</astyanax-core.version>
         <hibernate-validator.version>5.2.2.Final</hibernate-validator.version>
         <powermock.version>1.7.1</powermock.version>
-        <mysql-connector.version>5.1.40</mysql-connector.version>
+        <mysql-connector.version>8.0.28</mysql-connector.version>
         <hamcrest-junit.version>2.0.0.0</hamcrest-junit.version>
         <retrofit2.version>2.1.0</retrofit2.version>
         <httpclient.version>4.5.1</httpclient.version>
