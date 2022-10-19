@@ -19,7 +19,7 @@
         <jodd.bean.version>3.6.6</jodd.bean.version>
         <common-codec.verison>1.10</common-codec.verison>
         <jackson2.version>2.7.3</jackson2.version>
-        <jackson2-databind.version>2.7.9.1</jackson2-databind.version>
+        <jackson2-databind.version>2.13.4.1</jackson2-databind.version>
         <lombok.version>1.16.4</lombok.version>
         <jwt.version>2.2.0</jwt.version>
         <okhttp.version>3.3.0</okhttp.version>
